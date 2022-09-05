@@ -5,6 +5,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.usd.catapplication.databinding.ListItemCatBinding
 import com.usd.catapplication.model.Cat
 
@@ -37,17 +38,18 @@ class CatsAdapter : RecyclerView.Adapter<CatsAdapter.CatViewHolder>() {
         holder.bind(cat)
     }
 
-    class CatViewHolder(private val binding: ListItemCatBinding) : RecyclerView.ViewHolder(binding.root) {
+    class CatViewHolder(private val binding: ListItemCatBinding) :
+        RecyclerView.ViewHolder(binding.root) {
 
         fun bind(cat: Cat) {
             binding.tvName.text = cat.name
-            //binding.tvName.text = movie.title
-            //val posterURL = "https://image.tmdb.org/t/p/w500" + movie.posterPath
-/*            Glide.with(binding.imageView.context)
-                .load(posterURL)
-                .into(binding.imageView)*/
+            binding.tvDescription.text = cat.description
+            cat.image?.url?.let { url ->
+                Glide.with(binding.ivCatBreedImage.context)
+                    .load(url)
+                    .into(binding.ivCatBreedImage)
+            }
         }
-
     }
 
 

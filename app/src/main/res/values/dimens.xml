@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="separator_height">1dp</dimen>
+    <dimen name="sub_info_text_size">14sp</dimen>
+
+</resources>

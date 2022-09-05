@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <color name="colorPrimary">#0079C9</color>
+    <color name="colorPrimaryDark">#FF026AAF</color>
+    <color name="colorAccent">#0079C9</color>
+    <color name="colorAccentLight">#1C0079C9</color>
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +11,24 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="blue_primary">#0079C9</color>
+    <color name="colorWhiteF7">#F7F7F7</color>
+    <color name="colorGrey7D">#7d7d7d</color>
+    <color name="colorGrey4A">#4A4A4A</color>
+    <color name="colorPrimaryBlue">#0075d0</color>
+    <color name="colorGrey7F">#7f7f7f</color>
+    <color name="colorBlueD0">#0075d0</color>
+    <color name="colorGrey4D">#4d4d4d</color>
+    <color name="colorBrown">#e4c8ae</color>
+    <color name="colorGrey39">#393939</color>
+    <color name="colorGreyE8">#E8E8E8</color>
+    <color name="colorBlack32">#323232</color>
+
+    <color name="background_splash">@color/black</color>
+    <color name="colorBottomBar">#0075d0</color>
+    <color name="colorSeparator">#eeeeee</color>
+    <color name="background_item_selected">#e5f1fa</color>
+    <color name="background_home">#2a0cac</color>
+    <color name="colorItemSeparatorV2">@color/colorGrey4D</color>
+    <color name="colorItemSeparator">@color/colorGreyE8</color>
 </resources>

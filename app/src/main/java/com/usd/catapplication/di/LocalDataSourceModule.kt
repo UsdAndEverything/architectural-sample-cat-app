@@ -1,5 +1,6 @@
 package com.usd.catapplication.di
 
+import com.usd.catapplication.data.database.CatDao
 import com.usd.catapplication.data.localdatasource.LocalDataSource
 import com.usd.catapplication.data.localdatasource.LocalDataSourceImpl
 import dagger.Module
@@ -14,8 +15,8 @@ class LocalDataSourceModule {
 
     @Provides
     @Singleton
-    fun provideLocalDataSource(): LocalDataSource {
-        return LocalDataSourceImpl()
+    fun provideLocalDataSource(catDao: CatDao): LocalDataSource {
+        return LocalDataSourceImpl(catDao)
     }
 
 }
