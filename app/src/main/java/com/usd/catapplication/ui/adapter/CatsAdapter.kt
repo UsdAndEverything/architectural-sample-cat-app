@@ -11,6 +11,8 @@ import com.usd.catapplication.model.Cat
 
 class CatsAdapter : RecyclerView.Adapter<CatsAdapter.CatViewHolder>() {
 
+    var itemClickListener: ((Cat) -> Unit)? = null
+
     private val itemCallback = object : DiffUtil.ItemCallback<Cat>() {
 
         override fun areItemsTheSame(oldItem: Cat, newItem: Cat): Boolean {
@@ -38,7 +40,7 @@ class CatsAdapter : RecyclerView.Adapter<CatsAdapter.CatViewHolder>() {
         holder.bind(cat)
     }
 
-    class CatViewHolder(private val binding: ListItemCatBinding) :
+    inner class CatViewHolder(private val binding: ListItemCatBinding) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(cat: Cat) {
@@ -48,6 +50,9 @@ class CatsAdapter : RecyclerView.Adapter<CatsAdapter.CatViewHolder>() {
                 Glide.with(binding.ivCatBreedImage.context)
                     .load(url)
                     .into(binding.ivCatBreedImage)
+            }
+            binding.root.setOnClickListener {
+                itemClickListener?.invoke(cat)
             }
         }
     }

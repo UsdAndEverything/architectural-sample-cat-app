@@ -8,6 +8,7 @@
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
+    <color name="color_gold">#FFD700</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
@@ -23,6 +24,8 @@
     <color name="colorGrey39">#393939</color>
     <color name="colorGreyE8">#E8E8E8</color>
     <color name="colorBlack32">#323232</color>
+    <color name="colorRed">#F86C5E</color>
+
 
     <color name="background_splash">@color/black</color>
     <color name="colorBottomBar">#0075d0</color>
